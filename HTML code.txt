@@ -3,32 +3,241 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Questionnaire</title>
+  <title>Tread — Merch Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Questionnaire</h1>
-    <form action="https://formspree.io/f/YOUR_LINK_HERE" method="POST">
 
-      <label>Your Name</label>
-      <input type="text" name="name" required />
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="https://tread.fi" class="logo">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="18" height="18" rx="4" fill="#f97316"/>
+          <path d="M4 9h10M9 4v10" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>tread.fi</span>
+      </a>
+      <div class="topbar-divider"></div>
+      <span class="topbar-title">Merch Order</span>
+    </div>
+    <div class="topbar-right">
+      <a href="https://app.tread.fi" class="topbar-btn">Launch App</a>
+    </div>
+  </header>
 
-      <label>Your Email</label>
-      <input type="email" name="email" required />
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
 
-      <label>How did you hear about us?</label>
-      <select name="source">
-        <option>Google</option>
-        <option>Friend</option>
-        <option>Social Media</option>
-      </select>
+    <!-- LEFT PANEL: Info -->
+    <aside class="sidebar">
+      <div class="sidebar-block">
+        <div class="stat-label">Drop</div>
+        <div class="stat-value green">Season 1</div>
+      </div>
+      <div class="sidebar-block">
+        <div class="stat-label">Items</div>
+        <div class="stat-value">Hoodie</div>
+        <div class="stat-value">Shirt</div>
+        <div class="stat-value">Cap</div>
+        <div class="stat-value">Stickers</div>
+      </div>
+      <div class="sidebar-block">
+        <div class="stat-label">Shipping</div>
+        <div class="stat-value">Global</div>
+      </div>
+      <div class="sidebar-block">
+        <div class="stat-label">Status</div>
+        <div class="stat-value green">● Open</div>
+      </div>
+      <div class="sidebar-note">
+        Fill out your details on the right. Orders are processed manually — we'll reach out if we need anything.
+      </div>
+    </aside>
 
-      <label>Any feedback?</label>
-      <textarea name="feedback" rows="4"></textarea>
+    <!-- RIGHT PANEL: Form -->
+    <main class="form-panel">
 
-      <button type="submit">Submit</button>
-    </form>
+      <form action="https://formspree.io/f/xbdqzpkz" method="POST">
+
+        <!-- ACCOUNT -->
+        <div class="panel-section">
+          <div class="section-header">
+            <span class="section-tag">01</span>
+            <span class="section-title">Account</span>
+          </div>
+          <div class="field">
+            <label>Tread Username <span class="req">*</span></label>
+            <input type="text" name="tread_username" placeholder="@username" required />
+          </div>
+        </div>
+
+        <!-- SHIPPING -->
+        <div class="panel-section">
+          <div class="section-header">
+            <span class="section-tag">02</span>
+            <span class="section-title">Shipping Address</span>
+          </div>
+
+          <div class="field">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" name="full_name" placeholder="As it appears on your ID" required />
+          </div>
+
+          <div class="field">
+            <label>Country <span class="req">*</span></label>
+            <select name="country" required>
+              <option value="">Select country</option>
+              <option>Afghanistan</option><option>Albania</option><option>Algeria</option>
+              <option>Andorra</option><option>Angola</option><option>Argentina</option>
+              <option>Armenia</option><option>Australia</option><option>Austria</option>
+              <option>Azerbaijan</option><option>Bahamas</option><option>Bahrain</option>
+              <option>Bangladesh</option><option>Belarus</option><option>Belgium</option>
+              <option>Belize</option><option>Benin</option><option>Bhutan</option>
+              <option>Bolivia</option><option>Bosnia and Herzegovina</option><option>Botswana</option>
+              <option>Brazil</option><option>Brunei</option><option>Bulgaria</option>
+              <option>Burkina Faso</option><option>Burundi</option><option>Cambodia</option>
+              <option>Cameroon</option><option>Canada</option><option>Cape Verde</option>
+              <option>Central African Republic</option><option>Chad</option><option>Chile</option>
+              <option>China</option><option>Colombia</option><option>Comoros</option>
+              <option>Congo</option><option>Costa Rica</option><option>Croatia</option>
+              <option>Cuba</option><option>Cyprus</option><option>Czech Republic</option>
+              <option>Denmark</option><option>Djibouti</option><option>Dominican Republic</option>
+              <option>Ecuador</option><option>Egypt</option><option>El Salvador</option>
+              <option>Estonia</option><option>Ethiopia</option><option>Fiji</option>
+              <option>Finland</option><option>France</option><option>Gabon</option>
+              <option>Gambia</option><option>Georgia</option><option>Germany</option>
+              <option>Ghana</option><option>Greece</option><option>Guatemala</option>
+              <option>Guinea</option><option>Haiti</option><option>Honduras</option>
+              <option>Hong Kong</option><option>Hungary</option><option>Iceland</option>
+              <option>India</option><option>Indonesia</option><option>Iran</option>
+              <option>Iraq</option><option>Ireland</option><option>Israel</option>
+              <option>Italy</option><option>Jamaica</option><option>Japan</option>
+              <option>Jordan</option><option>Kazakhstan</option><option>Kenya</option>
+              <option>Kuwait</option><option>Kyrgyzstan</option><option>Laos</option>
+              <option>Latvia</option><option>Lebanon</option><option>Libya</option>
+              <option>Liechtenstein</option><option>Lithuania</option><option>Luxembourg</option>
+              <option>Macau</option><option>Madagascar</option><option>Malawi</option>
+              <option>Malaysia</option><option>Maldives</option><option>Mali</option>
+              <option>Malta</option><option>Mauritania</option><option>Mauritius</option>
+              <option>Mexico</option><option>Moldova</option><option>Monaco</option>
+              <option>Mongolia</option><option>Montenegro</option><option>Morocco</option>
+              <option>Mozambique</option><option>Myanmar</option><option>Namibia</option>
+              <option>Nepal</option><option>Netherlands</option><option>New Zealand</option>
+              <option>Nicaragua</option><option>Niger</option><option>Nigeria</option>
+              <option>North Macedonia</option><option>Norway</option><option>Oman</option>
+              <option>Pakistan</option><option>Panama</option><option>Papua New Guinea</option>
+              <option>Paraguay</option><option>Peru</option><option>Philippines</option>
+              <option>Poland</option><option>Portugal</option><option>Qatar</option>
+              <option>Romania</option><option>Russia</option><option>Rwanda</option>
+              <option>Saudi Arabia</option><option>Senegal</option><option>Serbia</option>
+              <option>Sierra Leone</option><option>Singapore</option><option>Slovakia</option>
+              <option>Slovenia</option><option>Somalia</option><option>South Africa</option>
+              <option>South Korea</option><option>Spain</option><option>Sri Lanka</option>
+              <option>Sudan</option><option>Sweden</option><option>Switzerland</option>
+              <option>Syria</option><option>Taiwan</option><option>Tajikistan</option>
+              <option>Tanzania</option><option>Thailand</option><option>Togo</option>
+              <option>Trinidad and Tobago</option><option>Tunisia</option><option>Turkey</option>
+              <option>Turkmenistan</option><option>Uganda</option><option>Ukraine</option>
+              <option>United Arab Emirates</option><option>United Kingdom</option>
+              <option>United States</option><option>Uruguay</option><option>Uzbekistan</option>
+              <option>Venezuela</option><option>Vietnam</option><option>Yemen</option>
+              <option>Zambia</option><option>Zimbabwe</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Address Line 1 <span class="req">*</span></label>
+            <input type="text" name="address_line1" placeholder="Street number and name" required />
+          </div>
+
+          <div class="field">
+            <label>Address Line 2 <span class="opt">optional</span></label>
+            <input type="text" name="address_line2" placeholder="Apartment, suite, unit, floor, etc." />
+          </div>
+
+          <div class="field">
+            <label>Address Line 3 <span class="opt">optional</span></label>
+            <input type="text" name="address_line3" placeholder="District, neighborhood, area, etc." />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label>City / Town <span class="req">*</span></label>
+              <input type="text" name="city" placeholder="City" required />
+            </div>
+            <div class="field">
+              <label>State / Province <span class="opt">if applicable</span></label>
+              <input type="text" name="state" placeholder="Leave blank if N/A" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label>ZIP / Postal Code <span class="opt">if applicable</span></label>
+              <input type="text" name="zip" placeholder="Leave blank if N/A" />
+            </div>
+            <div class="field">
+              <label>Phone Number <span class="req">*</span></label>
+              <input type="tel" name="phone" placeholder="+1 234 567 8900" required />
+            </div>
+          </div>
+          <div class="field-hint">Include country code. Required by international couriers.</div>
+        </div>
+
+        <!-- SIZING -->
+        <div class="panel-section">
+          <div class="section-header">
+            <span class="section-tag">03</span>
+            <span class="section-title">Sizing</span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label>Shirt Size <span class="req">*</span></label>
+              <select name="shirt_size" required>
+                <option value="">Select</option>
+                <option>XS</option><option>S</option><option>M</option>
+                <option>L</option><option>XL</option><option>XXL</option><option>XXXL</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Hoodie Size <span class="req">*</span></label>
+              <select name="hoodie_size" required>
+                <option value="">Select</option>
+                <option>XS</option><option>S</option><option>M</option>
+                <option>L</option><option>XL</option><option>XXL</option><option>XXXL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Notes <span class="opt">optional</span></label>
+            <textarea name="notes" rows="3" placeholder="Special requests or delivery instructions..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="footer-note">Fields marked <span class="req">*</span> are required</div>
+          <button type="submit" class="submit-btn">
+            Submit Order
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+      </form>
+    </main>
   </div>
+
+  <footer class="footer">
+    <span>© 2025 tread.fi</span>
+    <a href="https://tread.fi/documents/privacy-policy">Privacy Policy</a>
+    <a href="https://tread.fi/documents/terms-of-service">Terms of Service</a>
+  </footer>
+
 </body>
 </html>
